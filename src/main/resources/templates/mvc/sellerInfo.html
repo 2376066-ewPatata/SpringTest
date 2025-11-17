@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>판매자 정보</title>
+</head>
+<body>
+
+    <h2 th:text="${title}">제목</h2>
+
+    <img th:src="${result.profileImage}" width="150px" height="150px" alt="프사">
+    <h1 th:text="${result.nickname}" style="font-weight:lighter">안팔아</h1>
+    <h3 th:text="${result.temperature}" style="color:#FFFF00">13.2</h3>
+
+</body>
+</html>
