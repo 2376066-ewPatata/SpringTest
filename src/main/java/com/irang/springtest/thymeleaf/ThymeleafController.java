@@ -144,4 +144,16 @@ public class ThymeleafController {
 
         return "thymeleaf/test04";
     }
+
+    @GetMapping("/weatherMain")
+    public String weatherMain(){
+
+        return "thymeleaf/weatherMain";
+    }
+
+    @GetMapping("/weatherForm")
+    public String weatherForm(){
+
+        return "thymeleaf/weatherForm";
+    }
 }
