@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.irang.springtest.thymeleaf.repository.WeatherRepository">
+    <select id="selectDay" parameterType="com.irang.springtest.thymeleaf.domain.WeatherHistory">
+        SELECT
+            `id`
+            ,`date`
+            , `weather`
+            , `temperatures`
+            , `precipitation`
+           , ` micro_dust`
+           , `wind_speed`
+        FROM
+            `weatherhistory`
+    </select>
+
+
+
+</mapper>
